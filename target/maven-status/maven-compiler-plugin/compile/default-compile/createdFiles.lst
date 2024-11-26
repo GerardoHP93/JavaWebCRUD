@@ -1,0 +1,11 @@
+com\uacam\javawebcrud\controlador\ProductoControlador.class
+com\uacam\javawebcrud\modelo\dao\ProductoDAO.class
+com\uacam\javawebcrud\resources\JakartaEE10Resource.class
+com\uacam\javawebcrud\JakartaRestConfiguration.class
+com\uacam\javawebcrud\seguridad\JwtFilter.class
+com\uacam\javawebcrud\modelo\Producto.class
+com\uacam\javawebcrud\util\UsuarioScriptServlet.class
+com\uacam\javawebcrud\modelo\dao\UsuarioDAO.class
+com\uacam\javawebcrud\config\Conexion.class
+com\uacam\javawebcrud\controlador\LogoutServlet.class
+com\uacam\javawebcrud\controlador\LoginServlet.class

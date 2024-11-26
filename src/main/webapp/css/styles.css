@@ -1,0 +1,197 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Tipo de fuente utilizado para el texto */
+    background: linear-gradient(to right, #9900ff, #003cff); /* Fondo de degradado */
+    text-align: center; /* Alineación del texto al centro */
+
+    /* Estilo de flexbox para centrar los elementos en la página */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 100vh; /* Altura de la ventana del navegador */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: white; /* Color de fondo del contenedor del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    width: 350px; /* Ancho del contenedor */
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+
+h1{
+    color: #fff;
+}
+
+/* Estilo para el título del formulario */
+h2 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Etiquetas de los campos del formulario */
+label {
+    display: block; /* Hace que las etiquetas se comporten como bloques */
+    margin-bottom: 5px; /* Espaciado inferior */
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #555; /* Color de la etiqueta */
+}
+
+/* Estilos para los campos de texto y número */
+input[type="text"],
+input[type="number"],
+input[type="password"]{
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el botón de envío */
+.submit-btn {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #2193b0; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el botón de envío al pasar el cursor */
+.submit-btn:hover {
+    background-color: #6dd5ed; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 20px auto; /* Espaciado y centrado */
+    border-collapse: collapse; /* Elimina el espacio entre los bordes de las celdas */
+    background-color: #fffb; /* Color de fondo de la tabla */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que exceda el contenedor */
+}
+
+/* Estilos para las celdas de la tabla */
+th, td {
+    padding: 12px; /* Espaciado interno */
+    height: 20px; /* Altura de las celdas */
+    border: 1px solid #fff6; /* Borde blanco con ligera opacidad */
+    text-align: center; /* Centra el contenido en las celdas */
+}
+
+th {
+    background-color: #fff9; /* Color de fondo para los encabezados de la tabla */
+}
+
+/* Estilo para botones genéricos */
+.btn {
+    background-color: #772eff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    margin: 10px; /* Espaciado externo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 4px #666; /* Sombra para dar un efecto de elevación */
+}
+
+/* Estilo para botones de tipo peligro */
+.btn-danger {
+    background-color: #a500a5; /* Color de fondo específico para botones de peligro */
+}
+
+/* Estilo para el efecto hover de botones */
+.btn:hover {
+    background-color: #018ccc; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilos específicos para botones de insertar */
+.btn-insertar {
+    background-color: hsl(350, 100%, 74%); /* Color específico para botones de insertar */
+}
+
+.btn-insertar:hover {
+    background-color: #ff4a4a; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilos para el formulario */
+form {
+    margin: 20px auto; /* Espaciado y centrado del formulario */
+    background-color: #fff; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 50%; /* Ancho del formulario */
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Estilo para el botón de envío en formularios */
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo del botón de envío */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Estilo para el botón de envío al pasar el cursor */
+input[type="submit"]:hover {
+    background-color: #018ccc; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para mensajes de éxito */
+.message-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+.mensaje-bienvenida {
+    color: blueviolet; /* Verde para resaltar el mensaje */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto */
+    background-color: #f0f8ff; /* Fondo claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #4CAF50; /* Borde verde */
+}
+
+
+/* Estilo para mensajes de error */
+.message-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+

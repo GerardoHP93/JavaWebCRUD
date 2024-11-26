@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
+    <!-- Configuración del controlador principal -->
+    <servlet>
+        <servlet-name>ProductoControlador</servlet-name>
+        <servlet-class>com.uacam.javawebcrud.controlador.ProductoControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductoControlador</servlet-name>
+        <url-pattern>/ProductoControlador</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuración del servlet de inicio de sesión -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.uacam.javawebcrud.controlador.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuración del servlet de cierre de sesión -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.uacam.javawebcrud.controlador.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuración del filtro JWT -->
+    <filter>
+        <filter-name>JwtFilter</filter-name>
+        <filter-class>com.uacam.javawebcrud.seguridad.JwtFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>JwtFilter</filter-name>
+        <url-pattern>/ProductoControlador</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>JwtFilter</filter-name>
+        <url-pattern>/*</url-pattern> <!-- Protege todas las rutas -->
+    </filter-mapping>
+
+
+    <!-- Configuración de la sesión -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>
